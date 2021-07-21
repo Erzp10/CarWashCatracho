@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CarWashCatracho.MainPage">
+
+    <!-- COLOR DE FONDO GRIS -->
+    <StackLayout
+        Padding="0"
+        Background="#E3E4E5">
+
+        <!-- FRANJA COLOR AZUL -->
+        <StackLayout
+            Background="#20B6E9"
+            Padding="24"
+            HeightRequest="200">
+
+            <!-- MARGENES DE LA TARJETA BLANCA -->
+            <StackLayout
+                Margin="10,80">
+
+                <!-- TARJETA COLOR BLANCO -->
+                <Frame
+                    BackgroundColor="#F5F5F5F5"
+                    CornerRadius="15"
+                    HasShadow="True"
+                    HeightRequest="400"
+                    HorizontalOptions="FillAndExpand">
+
+                    <!-- CONTENEDOR PRINCIPAL DE TARJETA -->
+                    <StackLayout>
+
+                        <!-- TITULOS DE LA TARJETA -->
+                        <StackLayout
+                            HorizontalOptions="Center">
+
+                            <Label 
+                                Text="Inicio de Sesión"
+                                TextColor="Black"
+                                HorizontalOptions="FillAndExpand"
+                                HorizontalTextAlignment="Center"
+                                FontSize="30"
+                                FontFamily="Racing"/>
+
+                            <Label  
+                                Text="Carwash Catracho" 
+                                TextColor="Black" 
+                                HorizontalOptions="FillAndExpand" 
+                                HorizontalTextAlignment="Center" 
+                                FontSize="25" 
+                                FontFamily="RacingSansOne_Regular"/>
+                        </StackLayout>
+
+                        <!-- CONTENEDORES DE LOS ENTRY -->
+                        <StackLayout
+                            Margin="5,15">
+
+                            <!--LABEL DE USUARIO -->
+                            <Label  
+                                Text="Ingrese el Usuario: " 
+                                TextColor="Black" 
+                                HorizontalOptions="FillAndExpand" 
+                                HorizontalTextAlignment="Center" 
+                                FontSize="20"
+                                FontFamily="Questrial"/>
+
+                            <!-- ESTILOS DEL ENTRY USUARIO -->
+                            <Frame
+                                BackgroundColor="Transparent" 
+                                BorderColor="Black" 
+                                Padding="0" 
+                                Margin="0" 
+                                CornerRadius="50" 
+                                WidthRequest="340"
+                                HorizontalOptions="FillAndExpand">
+
+                                <!-- CONTENEDOR ENTRY USUARIO -->
+                                <StackLayout
+                                    Orientation="Horizontal">
+
+                                    <Frame
+                                        CornerRadius="50" 
+                                        Padding="0" 
+                                        HorizontalOptions="Start" 
+                                        Margin="15,7,10,7" />
+
+                                    <!-- IMAGEN DE USUARIO -->
+                                    <Image 
+                                        Source="user.png" />
+
+                                    <!-- ENTRY USUARIO -->
+                                    <Entry 
+                                        Placeholder="Usuario" 
+                                        FontFamily="Questrial"
+                                        FontSize="20"
+                                        PlaceholderColor="Gray" 
+                                        TextColor="black" 
+                                        HorizontalOptions="FillAndExpand" 
+                                        Margin="0,0,15,0"/>
+                                </StackLayout>
+                            </Frame>
+
+                            <!-- LABEL DE PASSWORD -->
+                            <Label  
+                                Text="Ingrese la Contraseña: " 
+                                TextColor="Black" 
+                                HorizontalOptions="FillAndExpand" 
+                                HorizontalTextAlignment="Center" 
+                                FontSize="20"
+                                FontFamily="Questrial"/>
+
+                            <!-- ESTILOS DEL ENTRY USUARIO -->
+                            <Frame
+                                BackgroundColor="Transparent" 
+                                BorderColor="Black" 
+                                Padding="0" 
+                                Margin="0" 
+                                CornerRadius="50" 
+                                WidthRequest="340"
+                                HorizontalOptions="FillAndExpand">
+
+                                <!-- CONTENEDOR ENTRY USUARIO -->
+                                <StackLayout
+                                    Orientation="Horizontal">
+
+                                    <Frame
+                                        CornerRadius="50" 
+                                        Padding="0" 
+                                        HorizontalOptions="Start" 
+                                        Margin="15,7,10,7" />
+
+                                    <!-- IMAGEN DE PASSWORD -->
+                                    <Image 
+                                        Source="candado.png" />
+
+                                    <!-- ENTRY PASSWORD -->
+                                    <Entry 
+                                        Placeholder="Contraseña" 
+                                        FontFamily="Questrial"
+                                        FontSize="20"
+                                        PlaceholderColor="Gray" 
+                                        TextColor="black" 
+                                        HorizontalOptions="FillAndExpand" 
+                                        Margin="0,0,15,0"/>
+                                </StackLayout>
+                            </Frame>
+                        </StackLayout>
+
+                        <Button 
+                            Text="Login" 
+                            x:Name="btnLogin"
+                            Clicked="btnLogin_Clicked"
+                            BackgroundColor="#01ADBA"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            CornerRadius="50"
+                            BorderWidth="2"
+                            Margin="25,5"/>
+
+                        <Button 
+                            Text="Crear Usuario" 
+                            x:Name="btnCrear"
+                            Clicked="btnCrear_Clicked"
+                            BackgroundColor="#E3E4E5"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            CornerRadius="50"
+                            BorderWidth="2"
+                            Margin="25,0"/>
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
