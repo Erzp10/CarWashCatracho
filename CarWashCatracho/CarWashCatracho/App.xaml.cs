@@ -10,7 +10,7 @@ namespace CarWashCatracho
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new Facturacion());
         }
 
         protected override void OnStart()
