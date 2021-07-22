@@ -25,7 +25,7 @@
 
                         <!--Titulo -->
                         <Label 
-                            Text="Configuracion de Usuario"
+                            Text="Configuración de Usuario"
                             HorizontalOptions="Center"
                             TextColor="black"
                             FontFamily="Racing"
@@ -176,7 +176,7 @@
                              Margin="0,15,0,0">
 
                             <Label 
-                                Text="Ingrese Telefono: "
+                                Text="Ingrese Teléfono: "
                                 TextColor="Black"
                                 FontSize="20"
                                 FontFamily="Questrial"/>
@@ -204,7 +204,7 @@
                                     x:Name="txtTelefonoUsuario"
                                    Margin="0,0,15,0"
                                    Keyboard="Numeric"
-                                   Placeholder="Telefono"
+                                   Placeholder="Teléfono"
                                    PlaceholderColor="Gray"
                                    FontSize="20"
                                    FontFamily="Questrial"
