@@ -10,7 +10,7 @@ namespace CarWashCatracho
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new ConfigUsuario();
         }
 
         protected override void OnStart()
