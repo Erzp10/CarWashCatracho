@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace CarWashCatracho
 {
@@ -20,9 +21,9 @@ namespace CarWashCatracho
 
         }
 
-        private void btnCrear_Clicked(object sender, EventArgs e)
+        private async void btnCrear_Clicked(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new CrearUsuario());
         }
     }
 }
