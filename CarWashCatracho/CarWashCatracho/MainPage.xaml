@@ -8,7 +8,7 @@
              NavigationPage.HasNavigationBar="False"
              BackgroundImage="fondo.jpg">
 
-            <!-- MARGENES DE LA TARJETA BLANCA -->
+    <!-- MARGENES DE LA TARJETA BLANCA -->
     <StackLayout
                 Margin="10,80" >
 
